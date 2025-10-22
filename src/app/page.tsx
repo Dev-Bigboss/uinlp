@@ -178,7 +178,7 @@ export default function UINLPWebsite() {
                 research specifically tailored to Nigerian linguistic contexts.
               </p>
               <p className="text-lg text-gray-700">
-                We're bridging the digital divide by creating tools and datasets
+                We&apos;re bridging the digital divide by creating tools and datasets
                 that enable technology to understand and process Yoruba, Igbo,
                 Hausa, and other Nigerian languages effectively.
               </p>
@@ -469,7 +469,7 @@ export default function UINLPWebsite() {
           <p className="text-xl text-blue-100 mb-8">
             Interested in collaborating or learning more about our research?
             <br />
-            We'd love to hear from you.
+            We&apos;d love to hear from you.
           </p>
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-white">
             <p className="text-lg mb-2">Department of Computer Science</p>
