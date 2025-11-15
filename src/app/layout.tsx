@@ -1,34 +1,41 @@
+// app/layout.tsx
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
+import { ThemeProvider } from "@/theme";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "UINLP - University of Ibadan Natural Language Processing",
+  title: "UINLP - University of Ibadan NLP Unit",
   description:
-    "Advancing AI and Machine Learning research for Nigerian languages through innovative data solutions and collaborative research",
+    "Advancing language technology for African languages and digital inclusion.",
+  keywords:
+    "NLP, AI, African languages, Yoruba, Igbo, Hausa, University of Ibadan, digital inclusion",
+  openGraph: {
+    title: "UINLP",
+    description: "Connecting Africa through language technology",
+    url: "https://uinlp.ui.edu.ng",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className="bg-white dark:bg-gray-900">
+        {" "}
+        <ThemeProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

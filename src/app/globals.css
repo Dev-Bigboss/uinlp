@@ -1,26 +1,289 @@
+/* src/app/globals.css */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* === GLOBAL DARK MODE OVERRIDES === */
+.dark {
+  @apply bg-gray-900 text-white;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Backgrounds */
+.dark .bg-white { @apply bg-gray-900; }
+.dark .bg-gray-50 { @apply bg-gray-800; }
+.dark .bg-gray-100 { @apply bg-gray-700; }
+.dark .bg-gray-200 { @apply bg-gray-600; }
+
+/* Text */
+.dark .text-gray-900 { @apply text-white; }
+.dark .text-gray-700 { @apply text-gray-300; }
+.dark .text-gray-600 { @apply text-gray-400; }
+.dark .text-gray-500 { @apply text-gray-500; }
+
+/* Borders */
+.dark .border-gray-200 { @apply border-gray-700; }
+.dark .border-gray-300 { @apply border-gray-600; }
+.dark .border-blue-600 { @apply border-blue-500; }
+.dark .border-green-600 { @apply border-green-500; }
+.dark .border-blue-200 { @apply border-blue-700/50; }
+.dark .border-green-200 { @apply border-green-700/50; }
+.dark .border-indigo-100 { @apply border-indigo-700/50; }
+.dark .border-green-100 { @apply border-green-700/50; }
+
+/* Shadows */
+.dark .shadow-sm { @apply shadow-gray-800/50; }
+.dark .shadow-md { @apply shadow-gray-700/60; }
+.dark .shadow-lg { @apply shadow-gray-600/70; }
+.dark .shadow-xl { @apply shadow-gray-500/80; }
+
+/* Gradients (Hero) */
+.dark .bg-gradient-to-br.from-blue-50.via-white.to-green-50 {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-black;
+}
+.dark .bg-gradient-to-r.from-blue-600.to-green-600 {
+  @apply bg-gradient-to-r from-blue-400 to-green-400;
+}
+.dark .bg-gradient-to-r.from-blue-600.to-green-600.text-white {
+  @apply bg-gradient-to-r from-blue-500 to-green-500;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* CTA Buttons */
+.dark .bg-white.text-blue-600.border-blue-600 {
+  @apply bg-gray-800 text-blue-400 border-blue-500;
+}
+.dark .hover\:bg-blue-50 { @apply hover:bg-gray-700; }
+
+/* Vision & Mission Cards */
+.dark .bg-gradient-to-br.from-blue-50.to-blue-100 {
+  @apply bg-gradient-to-br from-blue-900/30 to-blue-800/20;
+}
+.dark .bg-gradient-to-br.from-green-50.to-green-100 {
+  @apply bg-gradient-to-br from-green-900/30 to-green-800/20;
+}
+.dark .bg-blue-600 { @apply bg-blue-500; }
+.dark .bg-green-600 { @apply bg-green-500; }
+
+/* Quick Links Cards */
+.dark .bg-gradient-to-br.from-gray-50.to-white {
+  @apply bg-gradient-to-br from-gray-800 to-gray-900;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Research Page */
+.dark .bg-gradient-to-br.from-blue-50.via-white.to-green-50 {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-black;
+}
+.dark .bg-gradient-to-br.from-blue-50.to-green-50 {
+  @apply bg-gradient-to-br from-blue-900/30 to-green-900/30;
+}
+.dark .bg-blue-50 {
+  @apply bg-blue-900/30;
+}
+.dark .bg-white.rounded-lg {
+  @apply bg-gray-800;
+}
+.dark .text-blue-600 {
+  @apply text-blue-400;
+}
+.dark .hover\:shadow-lg {
+  @apply hover:shadow-2xl;
+}
+
+/* Concepts Page */
+.dark .bg-gradient-to-br.from-blue-50.via-white.to-purple-50 {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-purple-900/20;
+}
+.dark .bg-gradient-to-r.from-blue-600.to-purple-600 {
+  @apply bg-gradient-to-r from-blue-700 to-purple-700;
+}
+.dark .bg-white\/20 { @apply bg-white/10; }
+.dark .border-white\/30 { @apply border-white/20; }
+.dark .hover\:bg-white\/30 { @apply hover:bg-white/20; }
+.dark .bg-white { @apply bg-gray-800; }
+.dark .border-gray-100 { @apply border-gray-700; }
+.dark .text-gray-400 { @apply text-gray-500; }
+.dark .group-hover\:text-blue-600 { @apply group-hover:text-blue-400; }
+.dark .text-gray-600 { @apply text-gray-400; }
+.dark .text-gray-700 { @apply text-gray-300; }
+.dark .text-gray-500 { @apply text-gray-500; }
+.dark .hover\:shadow-2xl { @apply hover:shadow-2xl; }
+
+/* Category Tags */
+.dark .bg-blue-100 { @apply bg-blue-900/30; }
+.dark .text-blue-700 { @apply text-blue-300; }
+.dark .bg-purple-100 { @apply bg-purple-900/30; }
+.dark .text-purple-700 { @apply text-purple-300; }
+.dark .bg-green-100 { @apply bg-green-900/30; }
+.dark .text-green-700 { @apply text-green-300; }
+.dark .bg-orange-100 { @apply bg-orange-900/30; }
+.dark .text-orange-700 { @apply text-orange-300; }
+
+/* Difficulty Tags */
+.dark .bg-green-100 { @apply bg-green-900/30; }
+.dark .text-green-700 { @apply text-green-300; }
+.dark .bg-yellow-100 { @apply bg-yellow-900/30; }
+.dark .text-yellow-700 { @apply text-yellow-300; }
+.dark .bg-red-100 { @apply bg-red-900/30; }
+.dark .text-red-700 { @apply text-red-300; }
+
+/* Author Avatar */
+.dark .bg-gradient-to-r.from-blue-600.to-purple-600 {
+  @apply bg-gradient-to-r from-blue-500 to-purple-500;
+}
+
+/* CTA Buttons */
+.dark .bg-white.text-blue-600 {
+  @apply bg-gray-800 text-blue-400;
+}
+.dark .hover\:shadow-xl { @apply hover:shadow-2xl; }
+
+/* Empty State */
+.dark .text-gray-300 { @apply text-gray-600; }
+
+/* Filter Bar */
+.dark .bg-white.shadow-sm { @apply bg-gray-800 shadow-gray-700/50; }
+.dark .border-gray-300 { @apply border-gray-600; }
+.dark .focus\:border-blue-500 { @apply focus:border-blue-400; }
+
+/* FIXED: Use opacity directly instead of bg-opacity */
+.dark .bg-opacity-10 {
+  opacity: 0.2;
+}
+
+/* Team Page */
+.dark .bg-gradient-to-br.from-blue-50.via-white.to-green-50 {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-black;
+}
+.dark .bg-gradient-to-r.from-blue-600.to-green-600 {
+  @apply bg-gradient-to-r from-blue-700 to-green-700;
+}
+.dark .bg-white\/20 { @apply bg-white/10; }
+.dark .bg-white\/50 { @apply bg-gray-800/50; }
+.dark .hover\:bg-white { @apply hover:bg-gray-700; }
+.dark .bg-gradient-to-br.from-blue-50.to-green-50 {
+  @apply bg-gradient-to-br from-blue-900/30 to-green-900/30;
+}
+.dark .bg-gradient-to-r.from-blue-600.to-green-600 {
+  @apply bg-gradient-to-r from-blue-500 to-green-500;
+}
+.dark .bg-gradient-to-r.from-blue-500.to-green-500 {
+  @apply bg-gradient-to-r from-blue-400 to-green-400;
+}
+.dark .border-blue-100 { @apply border-blue-700/50; }
+.dark .bg-gradient-to-br.from-blue-600\/10.to-green-600\/10 {
+  @apply bg-gradient-to-br from-blue-500/20 to-green-500/20;
+}
+.dark .text-blue-600 { @apply text-blue-400; }
+.dark .text-green-600 { @apply text-green-400; }
+.dark .hover\:shadow-2xl { @apply hover:shadow-2xl; }
+.dark .bg-gray-50 { @apply bg-gray-800; }
+.dark .bg-white.p-6 { @apply bg-gray-800; }
+.dark .bg-gradient-to-br.from-blue-50.to-green-50.p-8 { @apply bg-gradient-to-br from-blue-900/30 to-green-900/30; }
+.dark .bg-blue-200 { @apply bg-blue-700/50; }
+.dark .bg-white.p-3 { @apply bg-gray-700; }
+.dark .text-gray-800 { @apply text-gray-200; }
+.dark .text-gray-500 { @apply text-gray-500; }
+.dark .bg-blue-50.p-6 { @apply bg-blue-900/30; }
+.dark .hover\:shadow-xl { @apply hover:shadow-2xl; }
+
+
+/* Contact Page */
+.dark .bg-gradient-to-br.from-blue-50.via-white.to-green-50 {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-black;
+}
+.dark .bg-blue-100 { @apply bg-blue-900/30; }
+.dark .bg-green-100 { @apply bg-green-900/30; }
+.dark .text-blue-600 { @apply text-blue-400; }
+.dark .text-green-600 { @apply text-green-400; }
+.dark .bg-gradient-to-r.from-blue-50.to-green-50 {
+  @apply bg-gradient-to-r from-blue-900/30 to-green-900/30;
+}
+.dark .text-gray-700 { @apply text-gray-300; }
+.dark .bg-gray-50.p-8 { @apply bg-gray-800; }
+.dark .border-gray-300 { @apply border-gray-600; }
+.dark .focus\:border-blue-500 { @apply focus:border-blue-400; }
+.dark .bg-gradient-to-r.from-blue-600.to-green-600 {
+  @apply bg-gradient-to-r from-blue-700 to-green-700;
+}
+.dark .hover\:shadow-lg { @apply hover:shadow-2xl; }
+/* Hover opacity */
+.dark .group-hover\:opacity-20 {
+  @apply group-hover:opacity-30;
+}
+
+/* Icon & Text */
+.dark .text-gray-400 { @apply text-gray-500; }
+.dark .group-hover\:text-gray-900 { @apply group-hover:text-white; }
+.dark .via-gray-200 { @apply via-gray-700; }
+
+/* Strategic Goals */
+.dark .bg-blue-100 { @apply bg-blue-900/50; }
+.dark .text-blue-600 { @apply text-blue-400; }
+
+/* Featured Content */
+.dark .bg-gradient-to-br.from-indigo-50.to-purple-50 {
+  @apply bg-gradient-to-br from-indigo-900/30 to-purple-900/20;
+}
+.dark .bg-gradient-to-br.from-green-50.to-teal-50 {
+  @apply bg-gradient-to-br from-green-900/30 to-teal-900/20;
+}
+.dark .text-indigo-600 { @apply text-indigo-400; }
+.dark .text-indigo-700 { @apply text-indigo-300; }
+.dark .text-green-600 { @apply text-green-400; }
+.dark .bg-gradient-to-r.from-green-600.to-teal-600 {
+  @apply bg-gradient-to-r from-green-500 to-teal-500;
+}
+
+/* CTA Banner */
+.dark .bg-gradient-to-r.from-blue-600.to-green-600 {
+  @apply bg-gradient-to-r from-blue-700 to-green-700;
+}
+.dark .bg-white.text-blue-600 {
+  @apply bg-gray-800 text-blue-400;
+}
+.dark .bg-white\/20 { @apply bg-white/10; }
+.dark .border-white\/30 { @apply border-white/20; }
+.dark .hover\:bg-white\/30 { @apply hover:bg-white/20; }
+
+/* Hover Effects */
+.dark .hover\:shadow-xl { @apply hover:shadow-2xl; }
+
+/* Quick Links */
+.dark .bg-gradient-to-br.from-gray-50.to-white {
+  @apply bg-gradient-to-br from-gray-800 to-gray-900;
+}
+
+/* Navbar */
+.dark .bg-white\/90 { @apply bg-gray-900/90; }
+.dark .text-gray-700 { @apply text-gray-200; }
+.dark .hover\:text-blue-600 { @apply hover:text-blue-400; }
+.dark .border-gray-300 { @apply border-gray-700; }
+.dark .hover\:bg-blue-50 { @apply hover:bg-gray-700; }
+
+/* Mobile Menu */
+.dark .bg-white.border-t.border-gray-200 { @apply bg-gray-800 border-gray-700; }
+
+/* Gradients */
+.dark .bg-gradient-to-r.from-blue-600.to-green-600 {
+  @apply bg-gradient-to-r from-blue-400 to-green-400;
+}
+
+/* Strategy Page */
+.dark .bg-gradient-to-br.from-blue-50.via-white.to-green-50 {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-black;
+}
+.dark .bg-gradient-to-r.from-blue-600.to-green-600.text-white {
+  @apply bg-gradient-to-r from-blue-700 to-green-700;
+}
+
+/* Strategy Page */
+.dark .bg-blue-50 { @apply bg-blue-900/30; }
+.dark .bg-green-50 { @apply bg-green-900/30; }
+.dark .bg-white.rounded-full { @apply bg-gray-800; }
+.dark .text-blue-600 { @apply text-blue-400; }
+.dark .hover\:shadow-xl { @apply hover:shadow-2xl; }
+.dark .text-gray-800 { @apply text-gray-200; }
+.dark .bg-blue-600.rounded-full { @apply bg-blue-500; }
+.dark .bg-gradient-to-r.from-blue-600.to-green-600 { @apply bg-gradient-to-r from-blue-700 to-green-700; }
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 }
