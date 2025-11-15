@@ -80,7 +80,7 @@ export default function Team() {
                       {member.dept}
                     </p>
                     <p className="text-gray-700 text-sm text-center italic">
-                      "{member.bio}"
+                      &quot;{member.bio}&quot;
                     </p>
                   </div>
 
@@ -179,7 +179,6 @@ export default function Team() {
 
             <div className="mt-10 grid md:grid-cols-5 gap-4 text-xs">
               {[
-               
                 {
                   role: "Research Management Officer",
                   reportsTo: "Executive Secretary",

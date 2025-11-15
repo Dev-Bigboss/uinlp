@@ -111,11 +111,9 @@ export default function Home() {
                         className={`w-12 h-12 bg-gradient-to-br ${colorClasses} rounded-xl flex items-center justify-center mb-3`}
                         style={{ opacity: 0.1 }}
                       >
-                        <Icon
-                          className={`w-6 h-6 text-white`}
-                        />
+                        <Icon className={`w-6 h-6 text-white`} />
                       </div>
-                      
+
                       <h3 className="text-lg font-bold text-gray-900">
                         {link.label}
                       </h3>
@@ -236,7 +234,9 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <p className="text-gray-700 italic">"{featuredMember.bio}"</p>
+              <p className="text-gray-700 italic">
+                &quot;{featuredMember.bio}&quot;
+              </p>
               <Link
                 href="/team"
                 className="text-green-600 font-semibold hover:underline mt-4 inline-flex items-center"

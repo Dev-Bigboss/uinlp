@@ -36,14 +36,14 @@ const conceptsWithMeta: NLPConcept[] = nlpConcepts.map((c, i) => ({
     "Engr. Olalekan Okewale",
     "Dr. Nancy Woods",
   ][i % 5],
-  category: ["Core", "Core", "Applied", "Advanced", "Emerging"][i % 5] as any,
+  category: ["Core", "Core", "Applied", "Advanced", "Emerging"][i % 5] as NLPConcept["category"],
   difficulty: [
     "Beginner",
     "Intermediate",
     "Intermediate",
     "Advanced",
     "Advanced",
-  ][i % 5] as any,
+  ][i % 5] as NLPConcept["difficulty"],
 }));
 
 const categories = ["All", "Core", "Advanced", "Applied", "Emerging"];
