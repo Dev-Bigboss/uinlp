@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import ThemeToggle from "@/components/ui/ThemeToggle";
+import Image from "next/image";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -28,7 +29,17 @@ export default function Navbar() {
             href="/"
             className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent"
           >
-            UINLP
+            <Image
+              src="/logo.svg"
+              alt="UINLP Logo"
+              width={100}
+              height={40}
+              // className="w-10 h-10"
+              priority
+            />
+            {/* <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+              UINLP
+            </span>{" "} */}
           </Link>
 
           {/* Desktop Nav + Theme Toggle */}

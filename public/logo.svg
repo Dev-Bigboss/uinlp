@@ -1,0 +1,61 @@
+<svg width="280" height="100" viewBox="0 0 280 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="50%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon: Neural Network Symbol -->
+  <g transform="translate(20, 20)">
+    <!-- Center node -->
+    <circle cx="30" cy="30" r="7" fill="url(#iconGradient)" opacity="0.9"/>
+    
+    <!-- Left nodes -->
+    <circle cx="8" cy="15" r="4.5" fill="url(#iconGradient)" opacity="0.7"/>
+    <circle cx="8" cy="30" r="4.5" fill="url(#iconGradient)" opacity="0.7"/>
+    <circle cx="8" cy="45" r="4.5" fill="url(#iconGradient)" opacity="0.7"/>
+    
+    <!-- Right nodes -->
+    <circle cx="52" cy="15" r="4.5" fill="url(#iconGradient)" opacity="0.7"/>
+    <circle cx="52" cy="30" r="4.5" fill="url(#iconGradient)" opacity="0.7"/>
+    <circle cx="52" cy="45" r="4.5" fill="url(#iconGradient)" opacity="0.7"/>
+    
+    <!-- Connections -->
+    <line x1="8" y1="15" x2="30" y2="30" stroke="url(#gradient)" stroke-width="2" opacity="0.4"/>
+    <line x1="8" y1="30" x2="30" y2="30" stroke="url(#gradient)" stroke-width="2" opacity="0.4"/>
+    <line x1="8" y1="45" x2="30" y2="30" stroke="url(#gradient)" stroke-width="2" opacity="0.4"/>
+    
+    <line x1="30" y1="30" x2="52" y2="15" stroke="url(#gradient)" stroke-width="2" opacity="0.4"/>
+    <line x1="30" y1="30" x2="52" y2="30" stroke="url(#gradient)" stroke-width="2" opacity="0.4"/>
+    <line x1="30" y1="30" x2="52" y2="45" stroke="url(#gradient)" stroke-width="2" opacity="0.4"/>
+  </g>
+  
+  <!-- Main Text -->
+  <text 
+    x="95" 
+    y="55" 
+    font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif" 
+    font-weight="800" 
+    font-size="48" 
+    fill="url(#gradient)" 
+    letter-spacing="-1"
+  >UINLP</text>
+  
+  <!-- Simple Subtitle -->
+  <text 
+    x="95" 
+    y="75" 
+    font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif" 
+    font-weight="500" 
+    font-size="13" 
+    fill="#6B7280" 
+    letter-spacing="0.3"
+  >University of Ibadan</text>
+</svg>

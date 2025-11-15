@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     "Advancing language technology for African languages and digital inclusion.",
   keywords:
     "NLP, AI, African languages, Yoruba, Igbo, Hausa, University of Ibadan, digital inclusion",
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "UINLP",
     description: "Connecting Africa through language technology",
